@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Document</title>
+    </head>
+        <body> 
+            <h1>Tabela de Cadastro</h1>
+            <div class="container">
+               <form>
+
+                  <label>Nome:</label>
+                  <input type="text" id="inputNome" required placeholder="Digite seu nome" min ="0"max ="10" /> <br><br><br><br>
+
+                   <label>CPF: </label>
+                   <input type="tel" id="inputTel" required placeholder="Digite seu telefone"/><br><br><br>
+    
+                  <button type="button" class="glow-on-hover" onclick="inserirRegistro()" value="">Adicione +</button>
+                 <button id="reset" type="submit">Reset</button>
+               </form>
+            
+               <table id="registros" >
+                <tr>
+                  <th>Nome</th>
+                  <th>CPF</th>
+                  </tr>
+           
+            </table>
+        </div>
+            
+            <script src="./js/script.js"></script>
+        </body>
+    </html>
